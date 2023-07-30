@@ -10,6 +10,11 @@ class Employee(object):
         response = requests.get(path)
         return response.json()['Result']['Employee']
 
+    def time_logs(self):
+        path = 'https://turfhop.com/api/employees/get?id={}'.format(self.id)
+        response = requests.get(path)
+        return response.json()['Result']['TimeLogs']
+
     def all(self):
         path = 'https://turfhop.com/api/employees/getall?companyId={}'.format(cfg['turfhop']['TH_COMPANY_ID'])
         response = requests.get(path)

@@ -28,3 +28,9 @@ def test_all_employees():
     print(type(response))
     assert isinstance(response, list)
     assert response[0]['Active'] == True
+    
+@vcr.use_cassette('tests/vcr_cassettes/employees_time_logs.yml')
+def test_time_logs():
+    employee_instance = Employee(cfg['test_ids']['employee'])
+    response = employee_instance.time_logs()
+    assert isinstance(response, list)
