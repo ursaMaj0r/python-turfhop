@@ -40,6 +40,3 @@ def employee_time_logs():
     for employee in employees:
         info = Employee(employee['Id']).time_logs()
         print(info)      
- 
-        
-employee_time_logs()
