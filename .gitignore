@@ -1,0 +1,7 @@
+*.ini
+vcr_cassettes*
+test.py
+*cache*
+*.pyc
+tests/__pycache__/*
+*.vscode*
