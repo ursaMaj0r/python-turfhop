@@ -1,0 +1,1399 @@
+{
+	"info": {
+		"_postman_id": "",
+		"name": "TurfHop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Assets",
+			"item": [
+				{
+					"name": "Assets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/trackableassets/getall?companyId={{companyId}}",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"trackableassets",
+								"getall"
+							],
+							"query": [
+								{
+									"key": "companyId",
+									"value": "{{companyId}}"
+								},
+								{
+									"key": "locationId",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "search",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Asset Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/trackableassets/get?id",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"trackableassets",
+								"get"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "CompanyId",
+									"value": "{{companyId}}",
+									"type": "default"
+								},
+								{
+									"key": "Name",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "Type",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "Latitude",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Longitude",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Address",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Speed",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Odometer",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Altitude",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Direction",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "SerialNumber",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "OilType",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "OilFilter",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/trackableassets/create",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"trackableassets",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "CompanyId",
+									"value": "{{companyId}}",
+									"type": "default"
+								},
+								{
+									"key": "Name",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "Type",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "Latitude",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Longitude",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Address",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Speed",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Odometer",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Altitude",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Direction",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "SerialNumber",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "OilType",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "OilFilter",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Id",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "TrackableId",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Model",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Description",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Status",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "CreatedBy",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "DateCreated",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/trackableassets/edit",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"trackableassets",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/trackableassets/delete?id",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"trackableassets",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customers",
+			"item": [
+				{
+					"name": "Customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/customers/getall?companyId={{companyId}}",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"customers",
+								"getall"
+							],
+							"query": [
+								{
+									"key": "locationId",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "search",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "salespersonUserId",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "archived",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "companyId",
+									"value": "{{companyId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/customers/get?id",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"customers",
+								"get"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Crew",
+			"item": [
+				{
+					"name": "Crew",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/crews/getall?companyId={{companyId}}",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"crews",
+								"getall"
+							],
+							"query": [
+								{
+									"key": "companyId",
+									"value": "{{companyId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crew Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/crew/get?id",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"crew",
+								"get"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employees",
+			"item": [
+				{
+					"name": "Employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/employees/getall?companyId={{companyId}}",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"employees",
+								"getall"
+							],
+							"query": [
+								{
+									"key": "companyId",
+									"value": "{{companyId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Employee Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/employees/get?id=",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"employees",
+								"get"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Events",
+			"item": [
+				{
+					"name": "Events",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/events/getall?jobId=",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"events",
+								"getall"
+							],
+							"query": [
+								{
+									"key": "jobId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Event Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/events/get?id",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"events",
+								"get"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Forms",
+			"item": [
+				{
+					"name": "Forms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/forms/getall?companyId={{companyId}}",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"forms",
+								"getall"
+							],
+							"query": [
+								{
+									"key": "companyId",
+									"value": "{{companyId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Form Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/forms/get?id",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"forms",
+								"get"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Jobs",
+			"item": [
+				{
+					"name": "Jobs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/jobs/getall?companyId={{companyId}}",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"jobs",
+								"getall"
+							],
+							"query": [
+								{
+									"key": "start (date)",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "end (date)",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "locationId",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "search",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "salespersonUserId",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "projectManagerUserId",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "crewId",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "start",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "end",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "modifiedAfter",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "phaseId",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "companyId",
+									"value": "{{companyId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Job Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/jobs/get?id",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"jobs",
+								"get"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Job Line Items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/jobs/getlineitems?jobId",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"jobs",
+								"getlineitems"
+							],
+							"query": [
+								{
+									"key": "jobId",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Locations",
+			"item": [
+				{
+					"name": "Locations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/locations/getall?companyId={{companyId}}",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"locations",
+								"getall"
+							],
+							"query": [
+								{
+									"key": "companyId",
+									"value": "{{companyId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Location Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/locations/get?id",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"locations",
+								"get"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Invoices",
+			"item": [
+				{
+					"name": "Invoices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/invoices/getall?companyId={{companyId}}",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"invoices",
+								"getall"
+							],
+							"query": [
+								{
+									"key": "companyId",
+									"value": "{{companyId}}"
+								},
+								{
+									"key": "subStatus",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "locationId",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "search",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "salespersonUserId",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "start",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "end",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Invoice Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/invoices/get?id",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"invoices",
+								"get"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/products/getall?companyId={{companyId}}",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"products",
+								"getall"
+							],
+							"query": [
+								{
+									"key": "companyId",
+									"value": "{{companyId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Products for Job",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/api/products/getforjob?jobId",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"getforjob"
+							],
+							"query": [
+								{
+									"key": "jobId",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/product/get?id",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"product",
+								"get"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vendors",
+			"item": [
+				{
+					"name": "Vendors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/vendors/getall?companyId={{companyId}}",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"vendors",
+								"getall"
+							],
+							"query": [
+								{
+									"key": "companyId",
+									"value": "{{companyId}}"
+								},
+								{
+									"key": "search",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vendor Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/vendors/get?id",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"vendors",
+								"get"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Zapier",
+			"item": [
+				{
+					"name": "Authentication",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/zapier/signin?key={{zapierKey}}",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"zapier",
+								"signin"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{zapierKey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Lead",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Name",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "Email",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Phone",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "JobAddress1",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "JobAddress2",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "JobCity",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "JobState",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "JobZip",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "BillingAddress1",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "BillingAddress2",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "BillingCity",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "BillingState",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "BillingZip",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "CustomerType",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "ReferredBy",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/zapier/createlead",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"zapier",
+								"createlead"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Name",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "Email",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Phone",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "JobAddress1",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "JobAddress2",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "JobCity",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "JobState",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "JobZip",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "BillingAddress1",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "BillingAddress2",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "BillingCity",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "BillingState",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "BillingZip",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "CustomerType",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "ReferredBy",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/zapier/createcustomer",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"zapier",
+								"createcustomer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/account/signin?publicApiKey={{publicApiKey}}&privateApiKey={{privateApiKey}}",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"account",
+						"signin"
+					],
+					"query": [
+						{
+							"key": "publicApiKey",
+							"value": "{{publicApiKey}}"
+						},
+						{
+							"key": "privateApiKey",
+							"value": "{{privateApiKey}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base",
+			"value": "https://turfhop.com/api",
+			"type": "default"
+		},
+		{
+			"key": "publicApiKey",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "privateApiKey",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "companyId",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "zapierKey",
+			"value": ""
+		}
+	]
+}
